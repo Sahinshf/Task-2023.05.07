@@ -1,0 +1,48 @@
+﻿@model Service
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Default form</h4>
+                    <p class="card-description">
+                        Basic form layout
+                    </p>
+
+                    <form class="forms-sample" method="post">
+
+                        <div class="form-group">
+                            <label for="exampleInputUsername1">Image</label>
+                            <input class="form-control" asp-for="Image" placeholder="Image">
+                            <span asp-validation-for="Image"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input class="form-control" asp-for="Name" placeholder="Name">
+                            <span asp-validation-for="Name"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Desciption</label>
+                            <input class="form-control" asp-for="Description" placeholder="Desciption">
+                            <span asp-validation-for="Description"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mr-2">Update</button>
+                        <a class="btn btn-light" asp-action="Index">Cancel</a>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
